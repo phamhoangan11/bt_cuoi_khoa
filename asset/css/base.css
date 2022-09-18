@@ -1,0 +1,30 @@
+:root {
+    --black-cl: #171616;
+    --white-cl: #fff;
+    --blue-cl: #36e2ec;
+    --gray-cl: #4c5262;
+    --brown-cl: #111727;
+    --bshaw-cl: #090f1f;
+    --dakr-blue-cl: rgba(105, 105, 170, 0.1);
+    --shadow-cl: #131312;
+}
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap%22%20rel=%22stylesheet');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #131312;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

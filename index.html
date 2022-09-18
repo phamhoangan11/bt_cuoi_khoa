@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>My Music</title>
+</head>
+
+<body>
+    <!-- Begin header -->
+    <header>
+        <!--Begin Menu  -->
+        <div class="header__menu_side">
+            <h1>Playlist</h1>
+
+            <!-- Play list -->
+            <div class="header__menu_side-playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+            </div>
+
+            <!--Begin Menu song -->
+            <div class="header__menu_song">
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">01</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="1"></i>
+                </li>
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">02</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="2"></i>
+                </li>
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">03</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="3"></i>
+                </li>
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">04</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="4"></i>
+                </li>
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">05</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="5"></i>
+                </li>
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">06</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="6"></i>
+                </li>
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">07</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="7"></i>
+                </li>
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">08</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="8"></i>
+                </li>
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">09</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="9"></i>
+                </li>
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">10</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="10"></i>
+                </li>
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">11</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="11"></i>
+                </li>
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">12</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="12"></i>
+                </li>
+                <li class="header__menu_song-songItem">
+                    <span class="header__menu_song-songItem__number">13</span>
+                    <img class="header__menu_song-songItem__img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria">
+                    <h5 class="header__menu_song-songItem__name">
+                        Ave-Maria
+                        <div class="header__menu_song-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle" id="13"></i>
+                </li>
+            </div>
+            <!--End Menu song -->
+        </div>
+        <!--Begin Menu  -->
+
+        <!--Begin Song side -->
+        <div class="header__song_side">
+            <!-- Header top -->
+            <div class="header__song_side-top">
+                <!-- Header nav -->
+                <nav class="header__song_side-nav">
+                    <ul class="header__song_side-nav__lists">
+                        <li class="header__song_side-nav__element">DISCOVER <span></span></li>
+                        <li class="header__song_side-nav__element">MY LIBRARY</li>
+                        <li class="header__song_side-nav__element">RADIO</li>
+                    </ul>
+
+                    <div class="header__song_side-search">
+                        <i class="bi bi-search"></i>
+                        <input type="text" placeholder="Search Music..." class="header__song_side-search_input">
+                    </div>
+
+                    <div class="header__song_side-user">
+                        <img src="./asset/img/user_avt.jpg" alt="User" title="Phạm Hoàng Ân">
+                    </div>
+                </nav>
+
+                <!-- Header content -->
+                <div class="header__song_side-content">
+                    <h1>Chào mừng đến với thế giới âm nhạc</h1>
+                    <p>
+                        Bạn đang mệt mỏi trong một cuộc sống mưu sinh đầy vát vả lo toan.
+                        Bạn đang đau đầu với những âm thanh ồn ào của còi xe.
+                        <br>
+                        Hãy bắt đầu ngày mới với nhũng bản nhạc nhẹ nhàng du dương.
+                    </p>
+
+                    <div class="header__song_side-buttons">
+                        <button class="header__song_side-button_element header__song_side-button__play">PLAY</button>
+                        <button
+                            class="header__song_side-button_element header__song_side-buttons__follow">FOLLOW</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Popular song -->
+            <div class="header__song_side-popular">
+                <div class="header__song_side-popular__move-page">
+                    <h4>Những bài Thánh ca hay nhất</h4>
+                    <div class="header__song_side-popular__arrow">
+                        <i id="left_scroll" class="bi bi-arrow-left header__song_side-popular__arrow-left"></i>
+                        <i id="right_scroll" class="bi bi-arrow-right header__song_side-popular__arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="header__song_side-song-lists">
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="1"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="2"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="3"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="4"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="5"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="6"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="7"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="8"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="9"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="10"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="11"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="12"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                    <li class="header__song_side-song-songItem">
+                        <div class="header__song_side-song-songItem__img">
+                            <img src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria"
+                                class="header__song_side-song-songItem__img-song">
+                            <i class="bi playListPlay bi-play-circle" id="13"></i>
+                        </div>
+                        <h5 class="header__song_side-songItem__name">
+                            Ave-Maria
+                            <div class="header__song_side-songItem__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+
+            <!-- Popular singers -->
+            <div class="header__song_side-popular">
+                <div class="header__song_side-popular__move-page">
+                    <h4>Ca sĩ được yêu thích</h4>
+                    <div class="header__song_side-popular__arrow">
+                        <i id="left_scroll" class="bi bi-arrow-left header__song_side-popular__arrow-left"></i>
+                        <i id="right_scroll" class="bi bi-arrow-right header__song_side-popular__arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="header__song_side-singer-lists">
+                    <li class="header__song_side-singer-songItem">
+                        <div class="header__song_side-singer-songItem__img">
+                            <img src="./asset/img/singers/luu-anh-loan.jpg" alt="Lưu Ánh Loan"
+                                class="header__song_side-singer-songItem__img-song">
+                        </div>
+                    </li>
+                    <li class="header__song_side-singer-songItem">
+                        <div class="header__song_side-singer-songItem__img">
+                            <img src="./asset/img/singers/sky-nguyen.jpg" alt="Sky Nguyễn"
+                                class="header__song_side-singer-songItem__img-song">
+                        </div>
+                    </li>
+                    <li class="header__song_side-singer-songItem">
+                        <div class="header__song_side-singer-songItem__img">
+                            <img src="./asset/img/singers/gia-an.jpg" alt="Gia Ân"
+                                class="header__song_side-singer-songItem__img-song">
+                        </div>
+                    </li>
+                    <li class="header__song_side-singer-songItem">
+                        <div class="header__song_side-singer-songItem__img">
+                            <img src="./asset/img/singers/lm-jb-nguyen-sang.jpg" alt="Nguyễn Sang"
+                                class="header__song_side-singer-songItem__img-song">
+                        </div>
+                    </li>
+                    <li class="header__song_side-singer-songItem">
+                        <div class="header__song_side-singer-songItem__img">
+                            <img src="./asset/img/singers/mai-tien-van.jpg" alt="Mai Tiến Văn"
+                                class="header__song_side-singer-songItem__img-song">
+                        </div>
+                    </li>
+                    <li class="header__song_side-singer-songItem">
+                        <div class="header__song_side-singer-songItem__img">
+                            <img src="./asset/img/singers/phan-dinh-tung.jpg" alt="Phan Đình Tùng"
+                                class="header__song_side-singer-songItem__img-song">
+                        </div>
+                    </li>
+                    <li class="header__song_side-singer-songItem">
+                        <div class="header__song_side-singer-songItem__img">
+                            <img src="./asset/img/singers/luu-anh-loan.jpg" alt="Lưu Ánh Loan"
+                                class="header__song_side-singer-songItem__img-song">
+                        </div>
+                    </li>
+                    <li class="header__song_side-singer-songItem">
+                        <div class="header__song_side-singer-songItem__img">
+                            <img src="./asset/img/singers/luu-anh-loan.jpg" alt="Lưu Ánh Loan"
+                                class="header__song_side-singer-songItem__img-song">
+                        </div>
+                    </li>
+                    <li class="header__song_side-singer-songItem">
+                        <div class="header__song_side-singer-songItem__img">
+                            <img src="./asset/img/singers/luu-anh-loan.jpg" alt="Lưu Ánh Loan"
+                                class="header__song_side-singer-songItem__img-song">
+                        </div>
+                    </li>
+                </div>
+            </div>
+
+        </div>
+        <!--End Song side -->
+
+        <!--Begin Master play -->
+        <div class="header__master_play">
+            <div class="header__master_play-wave">
+                <div class="header__master_play-wave__colum"></div>
+                <div class="header__master_play-wave__colum"></div>
+                <div class="header__master_play-wave__colum"></div>
+            </div>
+
+            <img class="header__master_play-img" src="./asset/img/songs/Ave-Maria.jpg" alt="Ave-Maria" id="header__master_play-img">
+
+            <h5 class="header__master_play-wave__name" id="header__master_play-name">
+                Ave-Maria
+                <div class="header__master_play-wave__singer">Lưu Ánh Loan, Vũ Hoàng</div>
+            </h5>
+
+            <div class="header__master_play__icon">
+                <i class="bi bi-skip-start-fill" id="playBack"></i>
+                <i class="bi bi-play-fill" id="header__master-play"></i>
+                <i class="bi bi-skip-end-fill" id="playNext"></i>
+            </div>
+
+            <span id="header__master_play__currentStart" class="header__master_play-time">0:00</span>
+
+            <!-- Song bar run -->
+            <div class="header__master_play-bar">
+                <input type="range" id="header__master_play__seek" min="0" value="0" max="100">
+                <div class="header__master_play-bar__run" id="header__master_play-bar__run"></div>
+                <div class="header__master_play-bar__dot"></div>
+            </div>
+
+            <span id="header__master_play__currentEnd" class="header__master_play-time">0:00</span>
+
+            <!-- Vol -->
+            <div class="header__master_play-vol">
+                <i class="bi bi-volume-down-fill" id="header__master_play-vol_icon"></i>
+                <input type="range" id="header__master_play__vol" min="0" value="30" max="100">
+                <div class="header__master_play-vol_bar"></div>
+                <div class="header__master_play-vol_dot" id="header__master_play-vol_dot"></div>
+            </div>
+        </div>
+        <!--End Master play -->
+    </header>
+    <!-- End header -->
+    <script src="app.js"></script>
+</body>
+
+</html>
