@@ -250,19 +250,19 @@ vol.addEventListener('click', () => {
     music.volume = volChange / 100;
 })
 
-let indexBack = 1;
+let indexCurrentSong = 0;
 let playBack = document.getElementById('playBack');
 let playNext = document.getElementById('playNext');
 
 playBack.addEventListener('click', () => {
-    indexBack--;
-    if (indexBack < 0) {
-        indexBack = Array.from(menuSongItem).length -1;
+    indexCurrentSong--;
+    if (indexCurrentSong < 0) {
+        indexCurrentSong = Array.from(menuSongItem).length -1;
     }
-    console.log(indexBack)
-    music.src = songs[indexBack].path;
-    header__master_playImg.src = songs[indexBack].poster;
-    header__master_playName.innerHTML = songs[indexBack].songName;
+    console.log(indexCurrentSong)
+    music.src = songs[indexCurrentSong].path;
+    header__master_playImg.src = songs[indexCurrentSong].poster;
+    header__master_playName.innerHTML = songs[indexCurrentSong].songName;
     music.play();
     makeAllPlay();
     wave.classList.add('active2');
@@ -270,16 +270,16 @@ playBack.addEventListener('click', () => {
     masterPlay.classList.add('bi-pause-fill');
 })
 
-let indexNext = 0
+
 playNext.addEventListener('click', () => {
-    indexNext ++;
-    if (indexNext >= Array.from(menuSongItem).length) {
-        indexNext = 0;
+    indexCurrentSong ++;
+    if (indexCurrentSong >= Array.from(menuSongItem).length) {
+        indexCurrentSong = 0;
     }
-    console.log(indexNext)
-    music.src = songs[indexNext].path;
-    header__master_playImg.src = songs[indexNext].poster;
-    header__master_playName.innerHTML = songs[indexNext].songName;
+    console.log(indexCurrentSong)
+    music.src = songs[indexCurrentSong].path;
+    header__master_playImg.src = songs[indexCurrentSong].poster;
+    header__master_playName.innerHTML = songs[indexCurrentSong].songName;
     music.loadCurrentSong();
     music.play();
     makeAllPlay();
