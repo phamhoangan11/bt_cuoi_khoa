@@ -457,6 +457,7 @@ header {
     height: 10%;
     background-color: var(--brown-cl);
     box-shadow: 0 3px 8px var(--bshaw-cl);
+    z-index: 999;
 }
 
 .header__master_play-wave {

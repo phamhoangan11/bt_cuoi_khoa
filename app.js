@@ -251,36 +251,19 @@ vol.addEventListener('click', () => {
     music.volume = volChange / 100;
 })
 
-<<<<<<< HEAD
-let index = 0;
-=======
 let indexCurrentSong = 0;
->>>>>>> 2061a19e283fef9a747c32c8cb16debf40ea08d3
 let playBack = document.getElementById('playBack');
 let playNext = document.getElementById('playNext');
 
 playBack.addEventListener('click', () => {
-<<<<<<< HEAD
-    index--;
-    if (index < 0) {
-        index = Array.from(songs).length - 1;
-    }
-
-    console.log(index);
-    music.src = songs[index].path;
-    header__master_playImg.src = songs[index].poster;
-    header__master_playName.innerHTML = songs[index].songName;
-    music.loadCurrentSong();
-=======
     indexCurrentSong--;
     if (indexCurrentSong < 0) {
-        indexCurrentSong = Array.from(menuSongItem).length -1;
+        indexCurrentSong = Array.from(menuSongItem).length - 1;
     }
-    console.log(indexCurrentSong)
+    console.log(indexCurrentSong);
     music.src = songs[indexCurrentSong].path;
     header__master_playImg.src = songs[indexCurrentSong].poster;
     header__master_playName.innerHTML = songs[indexCurrentSong].songName;
->>>>>>> 2061a19e283fef9a747c32c8cb16debf40ea08d3
     music.play();
     makeAllPlay();
     wave.classList.add('active2');
@@ -290,26 +273,15 @@ playBack.addEventListener('click', () => {
 
 
 playNext.addEventListener('click', () => {
-<<<<<<< HEAD
-    index++;
-    if (index >= Array.from(menuSongItem).length) {
-        index = 0;
-    }
-    console.log(index);
-    music.src = songs[index].path;
-    header__master_playImg.src = songs[index].poster;
-    header__master_playName.innerHTML = songs[index].songName;
-=======
-    indexCurrentSong ++;
+    indexCurrentSong++;
     if (indexCurrentSong >= Array.from(menuSongItem).length) {
         indexCurrentSong = 0;
     }
-    console.log(indexCurrentSong)
+    console.log(indexCurrentSong);
     music.src = songs[indexCurrentSong].path;
     header__master_playImg.src = songs[indexCurrentSong].poster;
     header__master_playName.innerHTML = songs[indexCurrentSong].songName;
->>>>>>> 2061a19e283fef9a747c32c8cb16debf40ea08d3
-    music.loadCurrentSong();
+    // music.loadCurrentSong();
     music.play();
     makeAllPlay();
     wave.classList.add('active2');
