@@ -97,6 +97,7 @@ const songs = [
 ];
 
 const menuSongItem = document.getElementsByClassName('header__menu_song-songItem');
+const menuSongItemNumber = document.getElementsByClassName('header__menu_song-songItem__number');
 const sideSongItem = document.getElementsByClassName('header__song_side-song-songItem');
 Array.from(menuSongItem).forEach((element, i) => {
     element.getElementsByTagName('img')[0].src = songs[i].poster;
@@ -250,19 +251,21 @@ vol.addEventListener('click', () => {
     music.volume = volChange / 100;
 })
 
-let indexBack = 1;
+let index = 0;
 let playBack = document.getElementById('playBack');
 let playNext = document.getElementById('playNext');
 
 playBack.addEventListener('click', () => {
-    indexBack--;
-    if (indexBack < 0) {
-        indexBack = Array.from(menuSongItem).length -1;
+    index--;
+    if (index < 0) {
+        index = Array.from(songs).length - 1;
     }
-    console.log(indexBack)
-    music.src = songs[indexBack].path;
-    header__master_playImg.src = songs[indexBack].poster;
-    header__master_playName.innerHTML = songs[indexBack].songName;
+
+    console.log(index);
+    music.src = songs[index].path;
+    header__master_playImg.src = songs[index].poster;
+    header__master_playName.innerHTML = songs[index].songName;
+    music.loadCurrentSong();
     music.play();
     makeAllPlay();
     wave.classList.add('active2');
@@ -270,16 +273,16 @@ playBack.addEventListener('click', () => {
     masterPlay.classList.add('bi-pause-fill');
 })
 
-let indexNext = 0
+
 playNext.addEventListener('click', () => {
-    indexNext ++;
-    if (indexNext >= Array.from(menuSongItem).length) {
-        indexNext = 0;
+    index++;
+    if (index >= Array.from(menuSongItem).length) {
+        index = 0;
     }
-    console.log(indexNext)
-    music.src = songs[indexNext].path;
-    header__master_playImg.src = songs[indexNext].poster;
-    header__master_playName.innerHTML = songs[indexNext].songName;
+    console.log(index);
+    music.src = songs[index].path;
+    header__master_playImg.src = songs[index].poster;
+    header__master_playName.innerHTML = songs[index].songName;
     music.loadCurrentSong();
     music.play();
     makeAllPlay();
